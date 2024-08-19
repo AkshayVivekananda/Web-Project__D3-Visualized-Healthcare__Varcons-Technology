@@ -19,36 +19,58 @@
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
         nav {
-            background-color: #004d40;
-            text-align: center;
-            padding: 10px;
+            background-color: #ffffff;
+            padding: 15px 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        nav ul {
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        nav li {
+            margin: 0 20px;
         }
         nav a {
-            margin: 0 20px;
-            color: #ffffff;
             text-decoration: none;
+            color: #2193b0;
             font-weight: bold;
-            text-transform: uppercase;
+            font-size: 1.1rem;
         }
         nav a:hover {
-            text-decoration: underline;
+            color: #6dd5ed;
+        }
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px 20px;
         }
         section {
-            padding: 30px;
-            margin: 20px;
-            background-color: #ffffff;
-            border-radius: 12px;
+            background-color: white;
+            border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            padding: 30px;
+            width: 100%;
+            max-width: 800px;
+            margin-bottom: 20px;
         }
         section h2 {
-            color: #006064;
+            border-bottom: 2px solid #2193b0;
+            padding-bottom: 10px;
+            color: #333;
+            margin-bottom: 20px;
         }
         footer {
+            background-color: #2193b0;
+            color: white;
             text-align: center;
-            padding: 15px;
-            background-color: #004d40;
-            color: #ffffff;
-            margin-top: 20px;
+            padding: 20px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
             box-shadow: 0 -2px 4px rgba(0,0,0,0.1);
         }
     </style>
@@ -61,35 +83,39 @@
     </header>
 
     <nav>
-        <a href="#services">Services</a>
-        <a href="#about">About Us</a>
-        <a href="#contact">Contact</a>
+        <ul>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
     </nav>
 
-    <section id="services">
-        <h2>Our Services</h2>
-        <p>We offer a range of healthcare services to meet your needs:</p>
-        <ul>
-            <li>General Check-ups</li>
-            <li>Pediatric Care</li>
-            <li>Emergency Services</li>
-            <li>Specialized Surgery</li>
-            <li>Online Consultations</li>
-        </ul>
-    </section>
+    <main>
+        <section id="services">
+            <h2>Our Services</h2>
+            <p>We offer a range of healthcare services to meet your needs:</p>
+            <ul>
+                <li>General Check-ups</li>
+                <li>Pediatric Care</li>
+                <li>Emergency Services</li>
+                <li>Specialized Surgery</li>
+                <li>Online Consultations</li>
+            </ul>
+        </section>
 
-    <section id="about">
-        <h2>About Us</h2>
-        <p>HealthCare Plus is committed to providing high-quality healthcare services with a focus on patient care and satisfaction. Our team of experienced doctors and healthcare professionals are here to support your health journey.</p>
-    </section>
+        <section id="about">
+            <h2>About Us</h2>
+            <p>HealthCare Plus is committed to providing high-quality healthcare services with a focus on patient care and satisfaction. Our team of experienced doctors and healthcare professionals are here to support your health journey.</p>
+        </section>
 
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <p>If you have any questions or need to make an appointment, feel free to reach out to us:</p>
-        <p>Email: info@healthcareplus.com</p>
-        <p>Phone: +1 234 567 890</p>
-        <p>Address: 1234 Healthcare Blvd, Wellness City, HealthState</p>
-    </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or need to make an appointment, feel free to reach out to us:</p>
+            <p>Email: info@healthcareplus.com</p>
+            <p>Phone: +1 234 567 890</p>
+            <p>Address: 1234 Healthcare Blvd, Wellness City, HealthState</p>
+        </section>
+    </main>
 
     <footer>
         <p>&copy; 2024 HealthCare Plus. All Rights Reserved.</p>
